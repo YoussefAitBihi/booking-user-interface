@@ -1,0 +1,11 @@
+{
+  "name": "booking",
+  "version": "1.0.0",
+  "description": "Booking user interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Youssef Ait Bihi",
+  "license": "ISC"
+}
