@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #ccc;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Gentium Book Basic", serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 80%;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+/* ------------- */
+/* HEADER LAYOUT */
+/* ------------- */
+.header {
+  background-color: var(--color-grey-light-1);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo-box {
+  width: 6rem;
+  height: auto;
+}
+.header__logo {
+  display: block;
+  max-width: 100%;
+}
+
+/* ----------------- */
+/* NAVIGATION LAYOUT */
+/* ----------------- */
+/* --------------- */
+/* Main Navigation */
+/* --------------- */
+.navigation__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__link {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+}
+.navigation__link-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.form-search {
+  flex-basis: 30rem;
+}
+
+.form-search__group {
+  position: relative;
+}
+
+.form-search__control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--color-grey-light-3);
+  color: var(--color-grey-dark-2);
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10rem;
+}
+.form-search__control:focus {
+  outline: 1px solid var(--color-grey-dark-1);
+}
+
+.form-search__search {
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+.form-search__button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.form-search__icon {
+  max-width: 100%;
+  max-height: 100%;
+  fill: var(--color-grey-dark-3);
+}
+
+/*# sourceMappingURL=main.css.map */
