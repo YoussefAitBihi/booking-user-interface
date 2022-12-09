@@ -3,9 +3,13 @@
 /* ------------- */
 .header {
    background-color: var(--color-grey-light-1);
-   padding: 2rem;
+   padding: 1.5rem;
    display: flex;
    justify-content: space-between;
+
+   & > * {
+      align-self: center;
+   }
 
    &__logo-box {
       width: 6rem;
@@ -16,10 +20,4 @@
       display: block;
       max-width: 100%;
    }
-}
-
-/* ----------------- */
-/* NAVIGATION LAYOUT */
-/* ----------------- */
-.navigation {
 }
