@@ -17,10 +17,12 @@
    <body>
       <div class="container">
          <div class="row">
+            <!-- HEADER BLOCK -->
             <header class="header">
                <div class="header__logo-box">
                   <img src="img/logo.png" alt="Logo" class="header__logo" />
                </div>
+
                <form action="" class="form-search">
                   <div class="form-search__group">
                      <input
@@ -35,31 +37,32 @@
                      </button>
                   </div>
                </form>
+
+               <!-- MAIN NAVIGATION -->
                <nav class="navigation">
                   <ul class="navigation__list">
                      <li class="navigation__item">
-                        <a href="#!" class="navigation__link">
+                        <div class="navigation__link">
                            <svg class="navigation__link-icon">
                               <use
                                  xlink:href="img/sprite.svg#icon-bookmarks"
                               ></use>
                            </svg>
                            <span class="navigation__notification">2</span>
-                        </a>
+                        </div>
                      </li>
                      <li class="navigation__item">
-                        <a href="#!" class="navigation__link">
+                        <div class="navigation__link">
                            <svg class="navigation__link-icon">
                               <use
                                  xlink:href="img/sprite.svg#icon-message"
                               ></use>
                            </svg>
                            <span class="navigation__notification">10</span>
-                        </a>
+                        </div>
                      </li>
                      <li class="navigation__item">
-                        <a
-                           href="#!"
+                        <div
                            class="navigation__link navigation__link--picture-box"
                         >
                            <img
@@ -67,38 +70,114 @@
                               alt="Profile Picture"
                               class="navigation__picture"
                            />
-                        </a>
+                        </div>
                      </li>
                   </ul>
                </nav>
             </header>
-            <!-- <aside class="sidebar">
-               <nav class="sidebar-navigation">
-                  <ul class="sidebar-navigation__list">
-                     <li class="sidebar-navigation__item">
-                        <a href="#!" class="sidebar-navigation__link">
-                           hotel
+
+            <!-- MAIN BLOCK -->
+            <div class="main-wrapper">
+               <aside class="sidebar-quicklinks">
+                  <nav class="sidebar-navigation">
+                     <ul class="sidebar-navigation__list">
+                        <li class="sidebar-navigation__item">
+                           <a href="#!" class="sidebar-navigation__link">
+                              <svg class="sidebar-navigation__icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-home2"
+                                 ></use>
+                              </svg>
+                              Hotel
+                           </a>
+                        </li>
+                        <li class="sidebar-navigation__item">
+                           <a href="#!" class="sidebar-navigation__link">
+                              <svg class="sidebar-navigation__icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-airplane"
+                                 ></use>
+                              </svg>
+                              flight
+                           </a>
+                        </li>
+                        <li class="sidebar-navigation__item">
+                           <a href="#!" class="sidebar-navigation__link">
+                              <svg class="sidebar-navigation__icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-key"
+                                 ></use>
+                              </svg>
+                              car rental
+                           </a>
+                        </li>
+                        <li class="sidebar-navigation__item">
+                           <a href="#!" class="sidebar-navigation__link">
+                              <svg class="sidebar-navigation__icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-map"
+                                 ></use>
+                              </svg>
+                              tours
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </aside>
+
+               <!-- MAIN CONTENT -->
+               <main class="main-content">
+                  <!-- SECTION GALLERY BRIEF -->
+                  <section class="gallery-brief">
+                     <div class="gallery-brief__pictures-box">
+                        <figure class="gallery-brief__picture-box">
+                           <img
+                              src="img/hotel-1.jpg"
+                              alt="Hotel Picture 1"
+                              class="gallery-brief__picture"
+                           />
+                        </figure>
+                        <figure class="gallery-brief__picture-box">
+                           <img
+                              src="img/hotel-2.jpg"
+                              alt="Hotel Picture 2"
+                              class="gallery-brief__picture"
+                           />
+                        </figure>
+                        <figure class="gallery-brief__picture-box">
+                           <img
+                              src="img/hotel-3.jpg"
+                              alt="Hotel Picture 3"
+                              class="gallery-brief__picture"
+                           />
+                        </figure>
+                     </div>
+
+                     <div class="gallery-brief__heading-box">
+                        <h1 class="gallery-brief__heading">hotel paradise</h1>
+                        <a href="#!" class="gallery-brief__location">
+                           <svg class="gallery-brief__icon">
+                              <use
+                                 xlink:href="img/sprite.svg#icon-location2"
+                              ></use>
+                           </svg>
+                           Morocco, Casablanca
                         </a>
-                     </li>
-                     <li class="sidebar-navigation__item">
-                        <a href="#!" class="sidebar-navigation__link">
-                           flight
-                        </a>
-                     </li>
-                     <li class="sidebar-navigation__item">
-                        <a href="#!" class="sidebar-navigation__link">
-                           car rental
-                        </a>
-                     </li>
-                     <li class="sidebar-navigation__item">
-                        <a href="#!" class="sidebar-navigation__link">
-                           tours
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
-               <main class="main-content"></main>
-            </aside> -->
+                        <div class="gallery-brief__rating">
+                           <span class="gallery-brief__rating-average"
+                              >4.5</span
+                           >
+                           <span class="gallery-brief__rating-count"
+                              >200 votes</span
+                           >
+                        </div>
+                     </div>
+                  </section>
+
+                  <!-- SECTION GALLERY DETAILS -->
+                  <section class="gallery-details">Gallery Details</section>
+               </main>
+            </div>
          </div>
       </div>
    </body>

@@ -1,7 +1,9 @@
 @import "base/base";
 
+@import "components/component";
+
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 
-@import "component/component";
+@import "pages/home";

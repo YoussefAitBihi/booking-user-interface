@@ -1,0 +1,11 @@
+/* --------- */
+/* HOME PAGE */
+/* ********* */
+.main-wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.main-content {
+   flex-grow: 1;
+}
