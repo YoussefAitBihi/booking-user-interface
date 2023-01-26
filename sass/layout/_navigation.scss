@@ -1,9 +1,14 @@
-/* --------------- */
-/* Main Navigation */
-/* --------------- */
+/* ------------------- */
+/*   MAIN NAVIGATION   */
+/* ------------------- */
 .navigation {
+   display: flex;
+   flex-grow: 1;
+   justify-content: space-between;
+
    &__list {
       list-style: none;
+
       display: flex;
       justify-content: space-between;
 
@@ -13,10 +18,21 @@
    }
 
    &__item {
-      align-self: center;
+      padding: 1.5rem;
 
       &:not(:last-child) {
-         margin-right: 3rem;
+         background-color: var(--color-grey-light-3);
+      }
+
+      display: flex;
+      align-self: stretch;
+      align-items: center;
+
+      cursor: pointer;
+      transition: var(--transition-base);
+
+      &:hover:not(:last-child) {
+         background-color: var(--color-grey-light-4);
       }
    }
 
@@ -37,13 +53,13 @@
          fill: var(--color-grey-dark-2);
          transition: var(--transition-base);
       }
-
-      &:hover &-icon {
-         fill: var(--color-grey-dark-1);
-      }
    }
 
-   &__link:hover &__notification {
+   &__item:hover &__link-icon {
+      fill: var(--color-grey-dark-1);
+   }
+
+   &__item:hover &__notification {
       background-color: var(--color-primary-dark);
    }
 
@@ -76,34 +92,69 @@
 /* -------------- */
 .sidebar-quicklinks {
    display: flex;
-}
+   flex-direction: column; // From main axis to cross axis
+   justify-content: space-between;
 
-.sidebar-navigation {
    background-color: var(--color-grey-dark-1);
    padding: 2rem 0;
 
+   &__legal-text {
+      padding: 2rem;
+      font-size: 1.2rem;
+      color: var(--color-grey-dark-3);
+   }
+}
+
+.sidebar-navigation {
    &__list {
       list-style: none;
    }
 
    &__item {
-      transition: var(--transition-base);
-      background-image: linear-gradient(
-         90deg,
-         var(--color-primary-light),
-         var(--color-primary-dark)
-      );
-      background-repeat: no-repeat no-repeat;
-      background-size: 0% 0%;
-      background-position: 0% 50%;
+      &::before {
+         content: "";
+         display: block;
 
-      &:hover {
-         animation: backgroundEffect 0.7s ease-in;
+         width: 3px;
+         height: 100%;
+         background-image: linear-gradient(
+            90deg,
+            var(--color-primary-light),
+            var(--color-primary-dark)
+         );
+
+         position: absolute;
+         top: 0;
+         left: 0;
+
+         transform: scaleY(0);
+         transition: transform 0.2s cubic-bezier(0.99, -0.01, 0.17, 0.99),
+            width 0.2s 0.2s cubic-bezier(0.99, -0.01, 0.17, 0.99);
       }
+
+      &:hover::before,
+      &--active::before {
+         transform: scaleY(1);
+         width: 100%;
+      }
+
+      &:active::before {
+         background-image: linear-gradient(
+            90deg,
+            var(--color-primary-dark),
+            var(--color-primary-light)
+         );
+      }
+
+      position: relative;
    }
 
-   &__link {
-      display: block;
+   &__link:link,
+   &__link:visited {
+      display: flex;
+      align-items: center;
+
+      // We don't specify the background-image here because of max-content
       width: max-content;
       padding: 1.5rem 5rem;
       color: #fff;
@@ -111,24 +162,7 @@
       text-transform: uppercase;
       font-size: 1.5rem;
       font-weight: 300;
-   }
-
-   @keyframes backgroundEffect {
-      0% {
-         background-size: 2% 0%;
-      }
-
-      30% {
-         background-size: 2% 100%;
-      }
-
-      80% {
-         background-size: 100% 100%;
-      }
-
-      100% {
-         background-size: 100% 0;
-      }
+      position: relative;
    }
 
    &__icon {

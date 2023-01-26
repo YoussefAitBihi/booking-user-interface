@@ -17,29 +17,34 @@
    <body>
       <div class="container">
          <div class="row">
-            <!-- HEADER BLOCK -->
+            <!-- --------------------- -->
+            <!--     HEADER BLOCK      -->
+            <!-- --------------------- -->
             <header class="header">
                <div class="header__logo-box">
                   <img src="img/logo.png" alt="Logo" class="header__logo" />
                </div>
 
-               <form action="" class="form-search">
-                  <div class="form-search__group">
-                     <input
-                        type="search"
-                        placeholder="Search..."
-                        class="form-search__control"
-                     />
-                     <button type="submit" class="form-search__button">
-                        <svg class="form-search__icon">
-                           <use xlink:href="img/sprite.svg#icon-search"></use>
-                        </svg>
-                     </button>
-                  </div>
-               </form>
-
-               <!-- MAIN NAVIGATION -->
+               <!-- --------------------- -->
+               <!--    MAIN NAVIGATION    -->
+               <!-- --------------------- -->
                <nav class="navigation">
+                  <form action="" class="form-search">
+                     <div class="form-search__group">
+                        <input
+                           type="search"
+                           placeholder="Search..."
+                           class="form-search__control"
+                        />
+                        <button type="submit" class="form-search__button">
+                           <svg class="form-search__icon">
+                              <use
+                                 xlink:href="img/sprite.svg#icon-search"
+                              ></use>
+                           </svg>
+                        </button>
+                     </div>
+                  </form>
                   <ul class="navigation__list">
                      <li class="navigation__item">
                         <div class="navigation__link">
@@ -76,12 +81,16 @@
                </nav>
             </header>
 
-            <!-- MAIN BLOCK -->
+            <!-- --------------------- -->
+            <!--      MAIN BLOCK       -->
+            <!-- --------------------- -->
             <div class="main-wrapper">
                <aside class="sidebar-quicklinks">
                   <nav class="sidebar-navigation">
                      <ul class="sidebar-navigation__list">
-                        <li class="sidebar-navigation__item">
+                        <li
+                           class="sidebar-navigation__item sidebar-navigation__item--active"
+                        >
                            <a href="#!" class="sidebar-navigation__link">
                               <svg class="sidebar-navigation__icon">
                                  <use
@@ -123,59 +132,294 @@
                         </li>
                      </ul>
                   </nav>
+                  <p class="sidebar-quicklinks__legal-text">
+                     &copy; by booking. All rights reserved.
+                  </p>
                </aside>
 
-               <!-- MAIN CONTENT -->
+               <!-- --------------------- -->
+               <!--     MAIN CONTENT      -->
+               <!-- --------------------- -->
                <main class="main-content">
-                  <!-- SECTION GALLERY BRIEF -->
-                  <section class="gallery-brief">
-                     <div class="gallery-brief__pictures-box">
-                        <figure class="gallery-brief__picture-box">
+                  <!-- --------------------- -->
+                  <!--    SECTION GALLERY    -->
+                  <!-- --------------------- -->
+                  <section class="section-gallery">
+                     <div class="section-gallery__pictures-box">
+                        <figure class="section-gallery__picture-box">
                            <img
                               src="img/hotel-1.jpg"
                               alt="Hotel Picture 1"
-                              class="gallery-brief__picture"
+                              class="section-gallery__picture"
                            />
                         </figure>
-                        <figure class="gallery-brief__picture-box">
+                        <figure class="section-gallery__picture-box">
                            <img
                               src="img/hotel-2.jpg"
                               alt="Hotel Picture 2"
-                              class="gallery-brief__picture"
+                              class="section-gallery__picture"
                            />
                         </figure>
-                        <figure class="gallery-brief__picture-box">
+                        <figure class="section-gallery__picture-box">
                            <img
                               src="img/hotel-3.jpg"
                               alt="Hotel Picture 3"
-                              class="gallery-brief__picture"
+                              class="section-gallery__picture"
                            />
                         </figure>
                      </div>
-
-                     <div class="gallery-brief__heading-box">
-                        <h1 class="gallery-brief__heading">hotel paradise</h1>
-                        <a href="#!" class="gallery-brief__location">
-                           <svg class="gallery-brief__icon">
-                              <use
-                                 xlink:href="img/sprite.svg#icon-location2"
-                              ></use>
-                           </svg>
+                  </section>
+                  <!-- --------------------- -->
+                  <!--   SECTION OVERVIEW    -->
+                  <!-- --------------------- -->
+                  <section class="section-overview">
+                     <h1 class="section-overview__heading">hotel paradise</h1>
+                     <div class="section-overview__stars-box">
+                        <svg class="section-overview__star-icon">
+                           <use
+                              xlink:href="img/sprite.svg#icon-star-full"
+                           ></use>
+                        </svg>
+                        <svg class="section-overview__star-icon">
+                           <use
+                              xlink:href="img/sprite.svg#icon-star-full"
+                           ></use>
+                        </svg>
+                        <svg class="section-overview__star-icon">
+                           <use
+                              xlink:href="img/sprite.svg#icon-star-full"
+                           ></use>
+                        </svg>
+                        <svg class="section-overview__star-icon">
+                           <use
+                              xlink:href="img/sprite.svg#icon-star-full"
+                           ></use>
+                        </svg>
+                        <svg class="section-overview__star-icon">
+                           <use
+                              xlink:href="img/sprite.svg#icon-star-full"
+                           ></use>
+                        </svg>
+                     </div>
+                     <a href="#!" class="section-overview__location-box">
+                        <svg class="section-overview__location-icon">
+                           <use
+                              xlink:href="img/sprite.svg#icon-location2"
+                           ></use>
+                        </svg>
+                        <span class="section-overview__location-text">
                            Morocco, Casablanca
-                        </a>
-                        <div class="gallery-brief__rating">
-                           <span class="gallery-brief__rating-average"
-                              >4.5</span
-                           >
-                           <span class="gallery-brief__rating-count"
-                              >200 votes</span
-                           >
-                        </div>
+                        </span>
+                     </a>
+                     <div class="section-overview__rating-box">
+                        <span class="section-overview__rating-average"
+                           >4.5</span
+                        >
+                        <span class="section-overview__rating-count"
+                           >200 votes</span
+                        >
                      </div>
                   </section>
 
-                  <!-- SECTION GALLERY DETAILS -->
-                  <section class="gallery-details">Gallery Details</section>
+                  <div class="sections-more-box">
+                     <!-- ----------------------- -->
+                     <!--  SECTION MORE DETAILS   -->
+                     <!-- ----------------------- -->
+                     <section class="more-details">
+                        <div class="more-details__descriptions-box">
+                           <p class="more-details__description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Asperiores aperiam quibusdam beatae optio,
+                              at magnam perferendis quam maiores nostrum vitae.
+                           </p>
+                           <p class="more-details__description">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Accusantium, ullam iure. Libero, quos! Ad
+                              dicta molestias, quae nam laborum vitae!
+                           </p>
+                        </div>
+                        <hr class="more-details__separator" />
+                        <ul class="more-details__advantages-box">
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right
+                                    "
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                           <li class="more-details__advantage">
+                              <svg class="more-details__advantage-icon">
+                                 <use
+                                    xlink:href="img/sprite.svg#icon-chevron-thin-right"
+                                 ></use>
+                              </svg>
+                              Lorem ipsum dolor sit amet.
+                           </li>
+                        </ul>
+                        <hr class="more-details__separator" />
+                        <div class="more-details__user-recommendation">
+                           <p class="more-details__user-recommendation-text">
+                              Thomas and 2 others recommend this hotel
+                           </p>
+                           <div
+                              class="more-details__user-recommendation-avatars-box"
+                           >
+                              <div
+                                 class="more-details__user-recommendation-avatar-box"
+                              >
+                                 <img
+                                    src="img/user-1.jpg"
+                                    alt="User's avatar #1"
+                                    class="more-details__user-recommendation-avatar"
+                                 />
+                              </div>
+                              <div
+                                 class="more-details__user-recommendation-avatar-box"
+                              >
+                                 <img
+                                    src="img/user-2.jpg"
+                                    alt="User's avatar #2"
+                                    class="more-details__user-recommendation-avatar"
+                                 />
+                              </div>
+                              <div
+                                 class="more-details__user-recommendation-avatar-box"
+                              >
+                                 <img
+                                    src="img/user-3.jpg"
+                                    alt="User's avatar #3"
+                                    class="more-details__user-recommendation-avatar"
+                                 />
+                              </div>
+                              <div
+                                 class="more-details__user-recommendation-avatar-box"
+                              >
+                                 <img
+                                    src="img/user-4.jpg"
+                                    alt="User's avatar #4"
+                                    class="more-details__user-recommendation-avatar"
+                                 />
+                              </div>
+                              <div
+                                 class="more-details__user-recommendation-avatar-box"
+                              >
+                                 <img
+                                    src="img/user-5.jpg"
+                                    alt="User's avatar #5"
+                                    class="more-details__user-recommendation-avatar"
+                                 />
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                     <!-- ---------------------- -->
+                     <!--  SECTION USER REVIEW   -->
+                     <!-- ---------------------- -->
+                     <section class="users-review">
+                        <figure class="user-review">
+                           <blockquote class="user-review__text">
+                              Lorem ipsum, dolor sit amet consectetur
+                              adipisicing elit. Ipsum saepe deserunt aperiam
+                              quasi suscipit et expedita dolor minus molestias
+                              omnis?
+                           </blockquote>
+                           <figcaption class="user-review__infos">
+                              <img
+                                 src="img/user-5.jpg"
+                                 alt="User's avatar"
+                                 class="user-review__avatar"
+                              />
+                              <div class="user-review__infos-box">
+                                 <h2 class="user-review__infos-name">
+                                    Mark Zurich
+                                 </h2>
+                                 <p class="user-review__infos-date">
+                                    Th, Jan 26, 2023
+                                 </p>
+                              </div>
+                              <div class="user-review__infos-rating">4.2</div>
+                           </figcaption>
+                        </figure>
+                        <figure class="user-review">
+                           <blockquote class="user-review__text">
+                              Lorem ipsum, dolor sit amet consectetur
+                              adipisicing elit. Ipsum saepe deserunt aperiam
+                              quasi suscipit et expedita dolor minus molestias
+                              omnis?
+                           </blockquote>
+                           <figcaption class="user-review__infos">
+                              <img
+                                 src="img/user-6.jpg"
+                                 alt="User's avatar"
+                                 class="user-review__avatar"
+                              />
+                              <div class="user-review__infos-box">
+                                 <h2 class="user-review__infos-name">
+                                    Johnathan Zaim
+                                 </h2>
+                                 <p class="user-review__infos-date">
+                                    Th, Jan 26, 2023
+                                 </p>
+                              </div>
+                              <div class="user-review__infos-rating">4.8</div>
+                           </figcaption>
+                        </figure>
+
+                        <a href="#!" class="btn-text btn-text--right"
+                           >Show all &rightarrow;</a
+                        >
+                     </section>
+                  </div>
                </main>
             </div>
          </div>

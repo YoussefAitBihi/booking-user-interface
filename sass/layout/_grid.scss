@@ -6,11 +6,10 @@
    );
    display: flex;
    justify-content: center;
-   // align-items: center;
 }
 
 .row {
-   width: 80%;
+   max-width: 114rem;
    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
    background-color: #fff;
 }
