@@ -2,10 +2,12 @@
 /* HEADER LAYOUT */
 /* ------------- */
 .header {
+   width: 100%;
    background-color: var(--color-grey-light-1);
-   padding: 1.5rem;
+
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 
    & > * {
       align-self: center;
