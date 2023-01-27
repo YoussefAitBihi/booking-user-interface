@@ -1,15 +1,81 @@
 /* ------------------------ */
+/*        Main button       */
+/* ------------------------ */
+
+.btn-main {
+   &:link,
+   &:visited {
+      position: relative;
+      display: inline-block;
+      width: 25rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+         90deg,
+         var(--color-primary-dark),
+         var(--color-primary-light)
+      );
+      color: white;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      padding: 2rem 5rem;
+      border-radius: 25rem;
+      transition: all 0.2s;
+      overflow: hidden;
+   }
+
+   &:hover {
+      background-image: linear-gradient(
+         90deg,
+         var(--color-primary-light),
+         var(--color-primary-dark)
+      );
+   }
+
+   & > span {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s;
+   }
+
+   &__book {
+      top: 50%;
+      opacity: 1;
+   }
+
+   &__available-rooms {
+      top: 5rem;
+      opacity: 0;
+   }
+
+   &:hover &__available-rooms {
+      top: 50%;
+      opacity: 1;
+   }
+
+   &:hover &__book {
+      top: -0.5rem;
+      opacity: 0;
+   }
+}
+
+/* ------------------------ */
 /*        Button text       */
 /* ------------------------ */
 .btn-text {
+   &,
    &:link,
    &:visited {
       display: inline-block;
       text-decoration: none;
+      background-color: transparent;
       color: var(--color-primary-light);
       font-size: 1.15rem;
       padding-bottom: 0.35rem;
+      border: none;
       border-bottom: 1px solid currentColor;
+      cursor: pointer;
    }
 
    &--right {

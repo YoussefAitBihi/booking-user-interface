@@ -37,15 +37,62 @@ body {
 }
 
 /* ------------------------ */
+/*        Main button       */
+/* ------------------------ */
+.btn-main:link, .btn-main:visited {
+  position: relative;
+  display: inline-block;
+  width: 25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary-light));
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 2rem 5rem;
+  border-radius: 25rem;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+.btn-main:hover {
+  background-image: linear-gradient(90deg, var(--color-primary-light), var(--color-primary-dark));
+}
+.btn-main > span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+}
+.btn-main__book {
+  top: 50%;
+  opacity: 1;
+}
+.btn-main__available-rooms {
+  top: 5rem;
+  opacity: 0;
+}
+.btn-main:hover .btn-main__available-rooms {
+  top: 50%;
+  opacity: 1;
+}
+.btn-main:hover .btn-main__book {
+  top: -0.5rem;
+  opacity: 0;
+}
+
+/* ------------------------ */
 /*        Button text       */
 /* ------------------------ */
-.btn-text:link, .btn-text:visited {
+.btn-text, .btn-text:link, .btn-text:visited {
   display: inline-block;
   text-decoration: none;
+  background-color: transparent;
   color: var(--color-primary-light);
   font-size: 1.15rem;
   padding-bottom: 0.35rem;
+  border: none;
   border-bottom: 1px solid currentColor;
+  cursor: pointer;
 }
 .btn-text--right {
   float: right;
@@ -198,9 +245,9 @@ body {
 .header {
   width: 100%;
   background-color: var(--color-grey-light-1);
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .header > * {
   align-self: center;
@@ -221,6 +268,12 @@ body {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+}
+@media (max-width: 37.43em) {
+  .navigation {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 .navigation__list {
   list-style: none;
@@ -426,7 +479,6 @@ body {
 .sections-more-box {
   display: flex;
   padding: 3rem;
-  box-shadow: var(--shadow-light);
 }
 
 .more-details {
@@ -490,6 +542,22 @@ body {
   max-width: 100%;
   border: 4px solid #fff;
   border-radius: 50%;
+}
+
+/* ------------------------ */
+/*       SECTION BOOK       */
+/* ------------------------ */
+.section-book {
+  padding: 3rem 0;
+  background-color: var(--color-grey-light-1);
+  border-top: 1px solid var(--color-grey-light-3);
+  text-align: center;
+}
+.section-book__heading {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
