@@ -6,6 +6,11 @@
    flex-grow: 1;
    justify-content: space-between;
 
+   @media (max-width: 37.43em) {
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
    &__list {
       list-style: none;
 
